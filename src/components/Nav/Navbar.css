@@ -1,0 +1,118 @@
+/* Navbar.css */
+/* CSS For Nav bar */
+.navbar {
+  z-index: 1000; /* You can adjust the value as needed */
+}
+
+.App.light .navbar {
+  background-color: var(--light-background);
+  color: var(--light-text-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.App.dark .navbar {
+  background-color: var(--dark-background);
+  color: var(--dark-text-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5vh;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a,
+.navbar button,
+.navbar .daynight-toggle-wrapper {
+  text-decoration: none; /* Remove underline for visited links */
+  color: inherit; /* Inherit the text color from the parent element */
+  background: none; /* Ensure button has no default styles */
+  border: none; /* Ensure button has no border */
+  cursor: pointer; /* Ensure the button has a pointer cursor */
+  padding: 0; /* Ensure no padding */
+}
+
+.navbar a:visited {
+  text-decoration: none; /* Remove underline for visited links */
+  color: inherit; /* Inherit the text color from the parent element */
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer; /* Ensure the cursor indicates clickable */
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-text {
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+  margin-top: 5px; /* Add some spacing between icon and text */
+}
+
+.nav-icon {
+  font-size: 2em; /* Ensure all icons are the same size */
+  color: var(--icon-color); /* Use the icon color from your CSS variables */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.icon-link:hover .nav-icon,
+.icon-container:hover .nav-icon {
+  opacity: 0; /* Hide the icon on hover */
+}
+
+.icon-link:hover .icon-text,
+.icon-container:hover .icon-text {
+  opacity: 1;
+  transform: translateY(10px); /* Move text down below the icon */
+}
+
+/* Phone CSS */
+@media screen and (max-width: 799px) {
+  /* CSS for Nav text */
+  .App.light .navbar a,
+  .App.light .navbar .daynight-toggle-wrapper {
+    text-decoration: none;
+    color: var(--light-text-color);
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .App.dark .navbar a,
+  .App.dark .navbar .daynight-toggle-wrapper {
+    text-decoration: none;
+    color: var(--dark-text-color);
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 800px) {
+  .navbar a,
+  .navbar button,
+  .navbar .daynight-toggle-wrapper {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}

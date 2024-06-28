@@ -1,0 +1,679 @@
+[
+  {
+    "id": 1,
+    "title": "Additive Manufactured Faucet Design",
+    "category": "Research and Development",
+    "category-scope": "Manufacturing",
+    "sections": [
+      {
+        "type": "text",
+        "header": "Executive Summary",
+        "content": "This project showcased the innovative application of additive manufacturing in the design and creation of a high-end, decorative faucet. With a focus on aesthetics and functionality, the project utilized 3D printing technologies to produce a faucet with unique latticework and intricate void-like structures that traditional manufacturing could not achieve. My role involved presenting the project to potential investors and overseeing the technical aspects of the manufacturing process."
+      },
+      {
+        "type": "list",
+        "header": "Role and Contributions",
+        "items": [
+          {
+            "subheader": "Presentation and Communication",
+            "details": [
+              "Objective: As the presenter, I conveyed the project’s value and innovation to investors and potential customers, highlighting the unique features and market potential of our product.",
+              "Execution: I thoroughly prepared for this role, ensuring a deep understanding of the product to confidently discuss and respond to stakeholder inquiries."
+            ]
+          },
+          {
+            "subheader": "Technical Expertise and Manufacturing Oversight",
+            "details": [
+              "STL File Setup: Managed the setup of the STL file using Autodesk Netfabb, ensuring high precision in print specifications which was crucial for the project’s success.",
+              "3D Printing Process Oversight: Leveraged my expertise in 3D printing to troubleshoot issues, optimize print orientation, and support structures, significantly contributing to the project’s efficiency and quality output."
+            ]
+          },
+          {
+            "subheader": "Data Management and Report Presentation",
+            "details": [
+              "Documentation: Played a key role in the data compilation and presentation for the project report, ensuring clarity and accessibility of complex information for all project stakeholders."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "header": "Visual Documentation",
+        "content": "Includes CAD designs, images of the final product, and graphical presentations used during the stakeholder meetings to illustrate the project’s technical and aesthetic details."
+      },
+      {
+        "type": "list",
+        "header": "Project Impact and Reflection",
+        "items": [
+          {
+            "subheader": "Outcome",
+            "details": [
+              "The project was successfully completed with the faucet not only meeting but exceeding design expectations, demonstrating effective use of additive manufacturing in producing complex designs."
+            ]
+          },
+          {
+            "subheader": "Professional Growth",
+            "details": [
+              "This project was a significant opportunity for me to apply my technical skills in a real-world context and refine my ability to communicate complex ideas clearly and persuasively."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "header": "Future Directions",
+        "content": "Motivated by the success of this project, I am eager to further explore the possibilities of additive manufacturing in other areas of design and production, aiming to innovate and improve upon current technologies and approaches."
+      },
+      {
+        "type": "images",
+        "annotation": "Tap designs",
+        "images": [
+          "/project-images/project1/3dmodal.png",
+          "/project-images/project1/faucet.png",
+          "/project-images/project1/diagramannotated.png",
+          "/project-images/project1/sideshot.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "A Study on Brain Tissue Mechanics",
+    "category": "Biomechanics and Computational Modeling",
+    "category-scope": "Biomechanics",
+    "sections": [
+      {
+        "type": "text",
+        "header": "Abstract",
+        "content": "This project aims to enhance understanding of the mechanical properties of brain tissue to support neurobiochemical studies and refine computational models for clinical use. Utilizing Finite Element (FE) simulation environments in FEBio and MATLAB, we conducted extensive simulations under varied loading conditions, employing monophasic and biphasic material models. The project involved rigorous comparisons of simulation results with empirical data, contributing substantially to the field of neurobiomechanics by providing validated computational models."
+      },
+      {
+        "type": "list",
+        "header": "Project Overview",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Context and Importance: This study addresses the pivotal role of characterizing brain tissue mechanics within neurobiomechanics, influencing advancements in science, clinical applications, and technological innovations.",
+              "Simulation Framework: Employed Finite Element Analysis to explore the mechanical responses of brain tissue using different material models under torsional and uniaxial loading.",
+              "Objective: To conduct comparative analysis between monophasic and biphasic simulations and assess the applicability of Neo-Hookean and Ogden material models."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Literature Review",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Historical Perspective: Traced the evolution from observational studies to sophisticated computational models, highlighting the transition in understanding brain tissue mechanics.",
+              "Mechanical Characterization: Discussed the mechanical properties such as Young’s Modulus and Shear Modulus, and their implications in neurobiomechanics.",
+              "Material Modeling: Reviewed the development and use of various constitutive models to represent brain tissue behavior under mechanical stresses."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Methodology",
+        "items": [
+          {
+            "subheader": "Simulation Setup",
+            "details": [
+              "Detailed the creation of geometric arrangements, material characterization, and boundary conditions setup to mimic in vivo scenarios accurately."
+            ]
+          },
+          {
+            "subheader": "Tools Used",
+            "details": [
+              "Utilized the advanced capabilities of MATLAB coupled with the GIBBON toolbox to refine the simulation processes and data visualization."
+            ]
+          },
+          {
+            "subheader": "Parameter Optimization",
+            "details": [
+              "Objective: Enhance the simulation model’s accuracy by calibrating material parameters to match experimental data.",
+              "Process: Adapted pre-existing GIBBON demo codes to fit the cylindrical sample used in this study, altering geometry, meshing method, and element numbers.",
+              "Optimization Technique: Employed the ‘lsqnonlin’ MATLAB function for iterative refinement of material parameters to minimize the difference between simulated and experimental data.",
+              "Outcome: Achieved a refined set of material parameters that significantly improved the model’s predictive accuracy, particularly for the Ogden model used in biphasic simulations."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Discussion of Findings",
+        "items": [
+          {
+            "subheader": "Implications",
+            "details": [
+              "Discussed the implications of findings in the context of existing theoretical and experimental studies."
+            ]
+          },
+          {
+            "subheader": "Material Model Evaluation",
+            "details": [
+              "Assessed the accuracy of Neo-Hookean and Ogden models in depicting the complex behavior of brain tissue."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Conclusions and Future Work",
+        "items": [
+          {
+            "subheader": "Summary of Key Findings",
+            "details": [
+              "Recapped the significant advances made in simulating brain tissue mechanics, emphasizing the enhanced understanding and application in neurobiomechanics."
+            ]
+          },
+          {
+            "subheader": "Recommendations for Future Research",
+            "details": [
+              "Suggested areas for further exploration, particularly in improving simulation models and testing methodologies."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "images",
+        "annotation": "FEBio Studios",
+        "images": [
+          "/project-images/project2/TLC-FEBio1.png",
+          "/project-images/project2/TLC-FEBio2.png",
+          "/project-images/project2/TLC-FEBio3.png"
+        ]
+      },
+      {
+        "type": "images",
+        "annotation": "MATLAB (GIBBON)",
+        "images": [
+          "/project-images/project2/TLC-MATLAB1.png",
+          "/project-images/project2/TLC-MATLAB2.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Re-introduction of a Profitable Ferry Service",
+    "category": "Transportation and Feasibility Study",
+    "category-scope": "Transportation",
+    "sections": [
+      {
+        "type": "text",
+        "header": "Executive Summary",
+        "content": "This feasibility study evaluates the potential re-establishment of a ferry service linking Swansea with southwest England, assessing political, economic, social, technological, legal, and environmental factors. The study proposes the operation of three ferries, accommodating 90-170 passengers each, during peak tourist seasons. Financial analyses, including sensitivity analysis, predict a break-even point at seven years with an initial investment of £5.3 million."
+      },
+      {
+        "type": "list",
+        "header": "Introduction and Vision",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Vision and Strategy: Our mission is to facilitate efficient sea transport between Wales and Southwest England, enhancing connectivity and supporting local tourism. Detailed strategies and action plans are discussed in sections 9.1 and 9.3 of the report.",
+              "Project Requirements: Achieve profitability within five years. Minimize environmental impact and comply with marine pollution regulations (MARPOL Annex VI). Secure practical start-up funding. Legal and operational viability for passenger transport via sea."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Methodology",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Research and Analysis: Conducted comprehensive PESTLE and SWOT analyses to understand external factors and internal capabilities.",
+              "Financial Modeling: Developed a detailed financial model to explore revenue streams, operational costs, and break-even scenarios. Sensitivity analysis was performed to identify critical financial levers.",
+              "Stakeholder Engagement: Engaged with MPs and local authorities to assess political support and feasibility, ensuring alignment with regional development goals."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Key Findings",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Route and Service Design: The service will connect Swansea, Tenby, and Ilfracombe, optimizing the route based on historical data and current tourism trends. Operational strategy includes peak season service with potential off-season suspension to reduce costs.",
+              "Environmental Considerations: Addressed environmental impacts by planning routes that avoid conservation zones and by proposing measures to offset emissions.",
+              "Community and Economic Impact: Predicted positive impacts on local economies through increased tourism and job creation. Plans for integrating the service with local transport systems to enhance connectivity."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Challenges and Solutions",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Infrastructure Needs: Identified existing infrastructure capacities and proposed enhancements to support increased ferry traffic without disrupting local ecosystems.",
+              "Regulatory Compliance: Ensured all proposed operations comply with maritime safety and environmental regulations, planning for regular audits and certifications."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Conclusion",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Project Viability: Concluded that the ferry service is financially and operationally viable with strategic investments and community support.",
+              "Recommendations: Suggested phased implementation with ongoing review of operational metrics and community impact to ensure sustainable growth and adaptation to market changes."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Role and Contributions",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Sensitivity Analysis: As Lead Analyst, I conducted in-depth financial modeling and sensitivity analysis to evaluate key variables impacting the project's viability, helping shape strategic financial decisions.",
+              "Implementation Planning: Developed detailed implementation plans as Project Engineer, outlining critical steps from initiation to operational launch, ensuring compliance and operational efficiency.",
+              "Environmental Strategy: Crafted environmental impact assessments and mitigation strategies to ensure the project adhered to sustainability practices and regulatory requirements."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "images",
+        "annotation": "Feasibility study",
+        "images": ["/project-images/project3/feasibility-study.png"]
+      },
+      {
+        "type": "images",
+        "annotation": "Maps",
+        "images": [
+          "/project-images/project3/map1.png",
+          "/project-images/project3/map2.png",
+          "/project-images/project3/map3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Predictive Maintenance and Human Activity Recognition",
+    "category": "Machine Learning and Data Analysis",
+    "category-scope": "Analytics",
+    "sections": [
+      {
+        "type": "text",
+        "header": "Executive Summary",
+        "content": "This report details the coursework execution for 'Machine Learning in Practice,' where unsupervised learning is applied for predictive maintenance and supervised learning for human activity recognition. Using tools like MATLAB, Principal Component Analysis (PCA) and various machine learning models were employed to assess data from equipment sensors and human activities, aiming to enhance predictive accuracy and operational efficiency."
+      },
+      {
+        "type": "list",
+        "header": "Introduction and Objectives",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Objective: To identify and implement machine learning algorithms capable of identifying patterns for maintenance needs and human activity with high accuracy.",
+              "Predictive Maintenance: Focus on unsupervised learning to predict equipment failures.",
+              "Human Activity Recognition: Utilize supervised learning to classify types of human activities."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Methodology",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Data Analysis: Utilization of PCA to reduce dimensionality in datasets and enhance model performance.",
+              "Model Comparison: Evaluation of various algorithms including Hotelling T-squared, Gaussian Mixture Model, and One-Class SVM for predictive maintenance. For human activity recognition, comparison of K-nearest neighbors (KNN) and Linear SVM performances with and without PCA."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Key Findings",
+        "items": [
+          {
+            "subheader": "Predictive Maintenance",
+            "details": [
+              "PCA Results: Identified that the first two principal components capture significant variance, explaining the majority of dataset behaviors.",
+              "Algorithm Performance: One-Class SVM outperformed other models in safety-critical decision-making scenarios."
+            ]
+          },
+          {
+            "subheader": "Human Activity Recognition",
+            "details": [
+              "Model Accuracy: Linear SVM showed superior accuracy over KNN, with PCA generally reducing performance.",
+              "Confusion Matrix Analysis: Provided detailed insights into classification errors and successes."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Challenges and Solutions",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Dimensionality Reduction: Challenges in maintaining critical information post-PCA application, which sometimes led to decreased model accuracy.",
+              "Algorithm Selection: Balancing between model complexity and computational efficiency for real-time applications."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Conclusion",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "The exploration of machine learning techniques in predictive maintenance and human activity recognition demonstrates substantial potential. The One-Class SVM and Linear SVM emerged as the most suitable models for their respective tasks. However, the impact of PCA on model performance highlighted the need for careful consideration of feature selection to preserve essential data characteristics."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Recommendations",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Further Research: Investigate the inclusion of additional data features and alternative machine learning models to improve accuracy.",
+              "Incremental Implementation: Apply these models in a controlled environment to gather real-world data and refine the approach based on practical feedback.",
+              "Continuous Monitoring: Establish a protocol for ongoing evaluation and optimization of the models to adapt to new data and evolving scenarios."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "images",
+        "annotation": "Varaibles against cycles until failure",
+        "images": ["/project-images/project4/var-till-fail.png"]
+      },
+      {
+        "type": "images",
+        "annotation": "One Class Support Vector Machine (OS SVM)",
+        "images": [
+          "/project-images/project4/traindata.png",
+          "/project-images/project4/applyoutlier.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Optimization of Laser Engraving Temperature Control",
+    "category": "Engineering and Thermal Dynamics",
+    "category-scope": "Thermodynamics",
+    "sections": [
+      {
+        "type": "text",
+        "header": "Executive Summary",
+        "content": "This report presents the findings from the evaluation and optimization of laser engraving temperature control. Focused on improving the temperature regulation in laser housing used for engraving on metals, plastics, wood, and glass, the study involves redesigning the laser housing's aluminum body and optimizing air and water cooling mechanisms. The key objective is to enhance the performance and efficiency of the laser by ensuring optimal temperature control, critical for high-quality, detailed engravings."
+      },
+      {
+        "type": "list",
+        "header": "Introduction",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Temperature control is crucial in laser engraving for achieving precision and detail in designs. The current project aims to refine the laser housing design to allow for more effective temperature management at higher power settings. This report outlines the redesign efforts of the laser housing, the methodology for assessing design performance, and the optimized solutions proposed to meet predefined temperature conditions."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Methodology",
+        "items": [
+          {
+            "subheader": "Design Assessment",
+            "details": [
+              "Employed computational fluid dynamics (CFD) simulations to evaluate the thermal performance of the laser housing under various operational conditions."
+            ]
+          },
+          {
+            "subheader": "Optimization Techniques",
+            "details": [
+              "Utilized advanced mesh studies and convergence plots to refine the design and improve the effectiveness of cooling mechanisms within the laser housing."
+            ]
+          },
+          {
+            "subheader": "Experimental Setup",
+            "details": [
+              "Simulated scenarios using different configurations of air and water flow to determine the best approach for temperature regulation."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Key Findings",
+        "items": [
+          {
+            "subheader": "Initial Design Limitations",
+            "details": [
+              "Identified the need for additional aluminum fins and optimized spacing between them to enhance heat dissipation efficiency."
+            ]
+          },
+          {
+            "subheader": "Thermal Performance",
+            "details": [
+              "The redesigned laser housing achieved better control over the maximum temperatures of helium, water, and the aluminum body, ensuring they remain below the set thresholds of 503K, 373K, and 318K, respectively."
+            ]
+          },
+          {
+            "subheader": "Optimization Results",
+            "details": [
+              "Demonstrated through simulations that increasing the number of fins and adjusting air and water flow rates contributed significantly to maintaining desired temperature levels."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Challenges and Solutions",
+        "items": [
+          {
+            "subheader": "Cooling Efficiency",
+            "details": [
+              "Addressed challenges in heat transfer efficiency by redesigning the aluminum body to include more fins and optimizing the flow of cooling mediums."
+            ]
+          },
+          {
+            "subheader": "Design Complexity",
+            "details": [
+              "Managed the complexities of the laser housing design by conducting detailed mesh analyses and ensuring that the modifications did not compromise the system's integrity or performance."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Conclusion",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "The optimization of the laser engraving temperature control system has proven successful in meeting the set temperature criteria, significantly enhancing the laser's operational efficiency. The redesigned housing allows for better heat management, ensuring high-quality engravings and prolonged equipment life."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Recommendations",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Further Testing: Recommend conducting real-world testing to validate the simulation results and to further refine the design if necessary.",
+              "Continuous Monitoring: Suggest implementing a monitoring system to regularly check the effectiveness of the temperature control mechanisms and make adjustments as needed.",
+              "Future Enhancements: Propose exploring alternative materials for the laser housing that might provide better thermal conductivity and resistance."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "images",
+        "annotation": "Initial Design",
+        "images": ["/project-images/project5/initialDesign.png"]
+      },
+      {
+        "type": "images",
+        "annotation": "Visual representation of Temperature and velocity distribution",
+        "images": [
+          "/project-images/project5/1.png",
+          "/project-images/project5/2.png",
+          "/project-images/project5/3.png",
+          "/project-images/project5/4.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Remote-Control Toy Car Project",
+    "category": "Engineering and Eco-Friendly Design",
+    "category-scope": "Engineering",
+    "sections": [
+      {
+        "type": "text",
+        "header": "Executive Summary",
+        "content": "This report outlines the development of an eco-friendly and educational remote-controlled toy race car, integrating recycled materials and designed for simplicity in assembly. The project leverages Finite Element Analysis (FEA) and Failure Mode and Effects Analysis (FMEA) to ensure safety, durability, and optimal performance."
+      },
+      {
+        "type": "images",
+        "annotation": "Complete RC car",
+        "images": ["/project-images/project6/RC.png"]
+      },
+      {
+        "type": "images",
+        "annotation": "RC components",
+        "images": [
+          "/project-images/project6/chasis.png",
+          "/project-images/project6/gears.png",
+          "/project-images/project6/wheelbase.png",
+          "/project-images/project6/wheels.png"
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Introduction",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "The Remote-Control Toy Car Project aims to develop a competitive toy race car that can be easily assembled by consumers using common household tools. This product is designed to educate children about basic engineering principles and the importance of recycling, aligning with green practices."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Project Design Goals",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Durability and Safety: Ensuring a long lifespan and resistance to typical usage conditions with a safety factor greater than 2.",
+              "Environmental Sustainability: Incorporating recycled materials such as aluminum cans and cardboard, promoting solar energy for charging, and educating users on recycling the product efficiently.",
+              "Ease of Assembly: Designing the car to be assembled with minimal tools; a screwdriver and scissors are sufficient."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Design Description",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "The car features a design that allows for lower center mass and an aggressive profile which enhances handling and competes effectively with other models in the market. Recycled materials are utilized creatively, with aluminum housing the motor and cardboard used for customizable bodywork."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Technical Analysis",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Finite Element Analysis (FEA): Performed on all critical components to simulate various load cases, ensuring all factors of safety are met.",
+              "Drive Mechanism Design: The drivetrain was designed to efficiently step down speed from a high-speed motor to a lower speed rear drive axle, achieving the desired speed reduction ratio of 9:1."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Performance Testing",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "The vehicle was tested to ensure it could travel 10 meters in a straight line, confirming its functionality and performance capabilities."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Conclusion",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "The Remote-Control Toy Car Project successfully meets the designed objectives, providing a robust, environmentally friendly, and educational product that offers an engaging experience to young users while promoting sustainability."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Future Recommendations",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Continued innovation in using sustainable materials and further simplification of the assembly process are recommended to enhance user engagement and environmental impact."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "header": "Acknowledgements",
+        "items": [
+          {
+            "subheader": null,
+            "details": [
+              "Special thanks to the project team for their dedication and to all contributors who provided valuable insights and support throughout the project lifecycle."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

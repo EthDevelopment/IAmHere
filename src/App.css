@@ -1,0 +1,64 @@
+/* CSS for dark/light application text */
+:root {
+  /* Light mode colour scheme */
+  --light-background: #d3d3d3;
+  --light-text-color: #121212;
+  --light-border-color: #a6a6a6;
+  --light-typewriter-color: #737373;
+  --light-accent-color: #dbedf7;
+  --light-accent-opposite-color: #a6a6a6;
+  --light-icon-color: #121212;
+  --light-circle-color: #dbedf7;
+
+  /* Dark mode colour scheme */
+  --dark-background: #121212;
+  --dark-text-color: #d3d3d3;
+  --dark-border-color: #353535;
+  --dark-typewriter-color: #737373;
+  --dark-accent-color: #0f593a;
+  --dark-accent-opposite-color: #353535;
+  --dark-icon-color: #d3d3d3;
+
+  /* Shadow colours */
+  --light-shadow: rgba(0, 0, 0, 0.1);
+  --dark-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* Add spacing between sections */
+section {
+  margin-bottom: 40px; /* Adjust the margin as needed to separate the sections */
+}
+
+.App {
+  text-align: center;
+  overflow-x: hidden;
+
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS for dark/light application theme */
+.App.light {
+  background-color: var(--light-background);
+  color: var(--light-text-color);
+}
+
+.App.dark {
+  background-color: var(--dark-background);
+  color: var(--dark-text-color);
+}
+
+/* Media query for screens with a resolution of "Insert x resolution" and above */
+@media (min-width: 1170px) and (min-height: 800px) {
+  .App .hero-text h1 {
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    width: 50vw;
+  }
+}

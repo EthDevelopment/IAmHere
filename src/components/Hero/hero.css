@@ -1,0 +1,49 @@
+/* src/components/hero.css */
+
+/* CSS for HERO page */
+.App .hero {
+  display: flex;
+  align-items: center;
+  height: 35vh;
+}
+
+.App .hero-text h1 {
+  bottom: 10vh;
+  font-size: 3em;
+  font-weight: bold;
+  width: 100vw;
+}
+
+/* Define styles for light theme text */
+.App .hero-text-light {
+  flex: 1;
+}
+
+/* Define styles for dark theme text */
+.App .hero-text-dark {
+  flex: 1;
+}
+
+/* Media query for larger screens (up to 1080px) */
+@media (max-width: 1080px) {
+  .App .hero {
+    height: 40vh; /* Adjust the height as needed for this screen size */
+  }
+
+  .App .hero-text h1 {
+    bottom: 8vh; /* Adjust positioning if necessary */
+    font-size: 2.5em; /* Adjust font size if necessary */
+  }
+}
+
+/* Media query for smaller screens (up to 768px) */
+@media (max-width: 768px) {
+  .App .hero {
+    height: 30vh;
+  }
+
+  .App .hero-text h1 {
+    bottom: 5vh; /* Adjust positioning if necessary */
+    font-size: 2em; /* Adjust font size if necessary */
+  }
+}

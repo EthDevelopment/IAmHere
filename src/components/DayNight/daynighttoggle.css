@@ -1,0 +1,51 @@
+/* daynighttoggle.css */
+.icon {
+  font-size: 1em; /* Same size as other nav icons */
+  color: var(--icon-color); /* Use the icon color from your CSS variables */
+  cursor: pointer; /* Ensure cursor indicates clickable */
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-wrapper {
+  width: 40px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+}
+
+.nav-icon {
+  font-size: 1em; /* Ensure all icons are the same size */
+  color: var(--icon-color); /* Use the icon color from your CSS variables */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  cursor: pointer; /* Ensure cursor indicates clickable */
+}
+
+.icon-link:hover .nav-icon,
+.icon-container:hover .nav-icon {
+  cursor: pointer; /* Ensure cursor indicates clickable */
+  opacity: 0;
+}
+
+.icon-link:hover .icon-text,
+.icon-container:hover .icon-text {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
