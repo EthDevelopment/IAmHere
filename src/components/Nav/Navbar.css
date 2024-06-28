@@ -4,7 +4,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: 20vw; /* 20% of viewport width */
+  width: 25vw; /* 25% of viewport width */
   height: 100vh; /* Full height */
   background-color: var(--background-color);
   display: flex;
@@ -24,8 +24,16 @@
   color: var(--dark-text-color);
 }
 
-.logo-container {
+.logo-title-container {
+  display: flex;
+  align-items: center;
   padding-bottom: 20px; /* Add padding to differentiate logo from icons */
+}
+
+.logo-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 10px; /* Add some space between the logo and the title */
 }
 
 .sidebar ul {
@@ -37,7 +45,7 @@
 
 .sidebar li {
   margin: 0; /* Reset margin */
-  border-bottom: 3px solid var(--border-color); /* Add border between items */
+  border-bottom: 1px solid var(--border-color); /* Add border between items */
 }
 
 .sidebar li:last-child {
@@ -52,7 +60,7 @@
   background: none; /* Ensure button has no default styles */
   border: none; /* Ensure button has no border */
   cursor: pointer; /* Ensure the button has a pointer cursor */
-  padding: 20px 30px; /* Add padding for better spacing */
+  padding: 10px 20px; /* Add padding for better spacing */
   display: flex;
   align-items: center;
 }
@@ -66,6 +74,7 @@
   display: flex;
   align-items: center; /* Align items center vertically */
   cursor: pointer; /* Ensure the cursor indicates clickable */
+  padding: 10px 0; /* Add padding for better spacing */
 }
 
 .icon-wrapper {
@@ -75,16 +84,19 @@
 }
 
 .nav-icon {
-  font-size: 4em; /* Ensure all icons are the same size, doubled in size */
+  font-size: 2em; /* Ensure all icons are the same size */
   color: var(--icon-color); /* Use the icon color from your CSS variables */
-  transition: color 0.3s ease;
+  font-weight: bold;
 }
 
 .icon-text {
-  margin-left: 20px; /* Add space between icon and text */
+  margin-left: 15px; /* Add space between icon and text */
   font-size: 1.5em; /* Adjust font size as needed */
+  color: var(--text-color);
 }
 
-.icon-container:hover .nav-icon {
-  color: white; /* Change the icon color to white on hover */
+.sidebar li.active .nav-icon,
+.sidebar li.active .icon-text {
+  font-weight: bold; /* Make icon and text bold when active */
+  color: var(--icon-color); /* Change color if needed */
 }

@@ -1,22 +1,12 @@
-// PostForm.js
+// src/components/Post/PostForm.js
 
-import React, { useState } from "react";
+import React from "react";
 import "./postForm.css";
 
-function PostForm({ addPost }) {
-  const [content, setContent] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (content.trim()) {
-      addPost(content);
-      setContent("");
-    }
-  };
-
+const PostForm = () => {
   return (
-    <form className="post-form" onSubmit={handleSubmit}>
-      <div className="post-form-header">
+    <div className="post-form">
+      <div className="post-header">
         <img
           src="https://via.placeholder.com/50"
           alt="Profile"
@@ -24,27 +14,15 @@ function PostForm({ addPost }) {
         />
         <textarea
           className="post-input"
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
           placeholder="What is happening?!"
-        />
+        ></textarea>
       </div>
-      <div className="post-form-footer">
-        <div className="post-icons">
-          {/* Add icons here, using placeholders for now */}
-          <span className="icon">🖼️</span>
-          <span className="icon">GIF</span>
-          <span className="icon">📊</span>
-          <span className="icon">😊</span>
-          <span className="icon">📅</span>
-          <span className="icon">📍</span>
-        </div>
-        <button type="submit" className="post-button">
-          Post
-        </button>
+      <div className="post-footer">
+        <div className="post-icons">{/* Add your icons here */}</div>
+        <button className="post-button">Post</button>
       </div>
-    </form>
+    </div>
   );
-}
+};
 
 export default PostForm;

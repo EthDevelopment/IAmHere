@@ -20,28 +20,14 @@
   justify-content: center;
 }
 
-.icon-text {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(-100%);
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  font-weight: bold;
-}
-
-.nav-icon {
-  font-size: 1em; /* Ensure all icons are the same size */
+.logo-icon {
+  font-size: 3em; /* Ensure all icons are the same size */
   color: var(--icon-color); /* Use the icon color from your CSS variables */
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  cursor: pointer; /* Ensure cursor indicates clickable */
 }
 
-.icon-link:hover .nav-icon,
-.icon-container:hover .nav-icon {
+.icon-link:hover .logo-icon,
+.icon-container:hover .logo-icon {
   cursor: pointer; /* Ensure cursor indicates clickable */
-  opacity: 0;
 }
 
 .icon-link:hover .icon-text,

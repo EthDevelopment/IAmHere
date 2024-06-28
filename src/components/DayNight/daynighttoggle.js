@@ -7,22 +7,19 @@ function DayNightToggle({ toggleTheme }) {
 
   const toggleMode = () => {
     setIsDayMode(!isDayMode);
-    toggleTheme(); // Call the toggleTheme callback
+    toggleTheme();
   };
 
   return (
     <div className="icon-link" onClick={toggleMode}>
       <div className="icon-container">
-        <div className="nav-icon">
+        <div className="logo-icon">
           {isDayMode ? (
             <BsFillMoonStarsFill className="icon" />
           ) : (
             <BsFillSunFill className="icon" />
           )}
         </div>
-        <span className="icon-text">
-          {isDayMode ? "Light Mode" : "Dark Mode"}
-        </span>
       </div>
     </div>
   );
