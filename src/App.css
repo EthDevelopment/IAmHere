@@ -1,82 +1,12 @@
-/* CSS for dark/light application text */
-:root {
-  /* Light mode color scheme */
-  --light-background: #ffffff;
-  --light-text-color: #121212;
-  --light-border-color: #e1e8ed;
-  --light-author-color: #1da1f2;
-  --light-timestamp-color: #657786;
-  --light-post-content-color: #14171a;
-  --light-input-background: #f5f8fa;
-  --light-input-text-color: #14171a;
-  --light-placeholder-color: #657786;
-  --light-icon-color: #1da1f2;
-  --light-button-background: #1da1f2;
-  --light-button-text-color: #ffffff;
-  --light-button-hover-background: #0d8de3;
-  --light-profile-pic-background: #d3d3d3;
-
-  /* Dark mode color scheme */
-  --dark-background: #121212;
-  --dark-text-color: #d3d3d3;
-  --dark-border-color: #37474f;
-  --dark-author-color: #1da1f2;
-  --dark-timestamp-color: #aab8c2;
-  --dark-post-content-color: #d3d3d3;
-  --dark-input-background: #2b2b2b;
-  --dark-input-text-color: #d3d3d3;
-  --dark-placeholder-color: #aab8c2;
-  --dark-icon-color: #1da1f2;
-  --dark-button-background: #1da1f2;
-  --dark-button-text-color: #ffffff;
-  --dark-button-hover-background: #0d8de3;
-  --dark-profile-pic-background: #37474f;
-
-  /* General variables */
-  --background-color: var(--light-background);
-  --text-color: var(--light-text-color);
-  --border-color: var(--light-border-color);
-  --post-background-color: var(--light-background);
-  --post-text-color: var(--light-text-color);
-  --author-color: var(--light-author-color);
-  --timestamp-color: var(--light-timestamp-color);
-  --post-content-color: var(--light-post-content-color);
-  --input-background: var(--light-input-background);
-  --input-text-color: var(--light-input-text-color);
-  --placeholder-color: var(--light-placeholder-color);
-  --icon-color: var(--light-icon-color);
-  --button-background: var(--light-button-background);
-  --button-text-color: var(--light-button-text-color);
-  --button-hover-background: var(--light-button-hover-background);
-  --profile-pic-background: var(--light-profile-pic-background);
-}
-
-.App.dark {
-  --background-color: var(--dark-background);
-  --text-color: var(--dark-text-color);
-  --border-color: var(--dark-border-color);
-  --post-background-color: var(--dark-background);
-  --post-text-color: var(--dark-text-color);
-  --author-color: var(--dark-author-color);
-  --timestamp-color: var(--dark-timestamp-color);
-  --post-content-color: var(--dark-post-content-color);
-  --input-background: var(--dark-input-background);
-  --input-text-color: var(--dark-input-text-color);
-  --placeholder-color: var(--dark-placeholder-color);
-  --icon-color: var(--dark-icon-color);
-  --button-background: var(--dark-button-background);
-  --button-text-color: var(--dark-button-text-color);
-  --button-hover-background: var(--dark-button-hover-background);
-  --profile-pic-background: var(--dark-profile-pic-background);
-}
+/* App.css */
 
 .App {
   text-align: center;
   overflow-x: hidden;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row; /* Change to row to place items side by side */
+  align-items: flex-start; /* Align items at the start */
 }
 
 .App.light {
@@ -87,4 +17,10 @@
 .App.dark {
   background-color: var(--dark-background);
   color: var(--dark-text-color);
+}
+
+.main-content {
+  flex-grow: 1; /* Allow the main content to grow and fill space */
+  margin-left: 20vw; /* Adjust margin-left to accommodate sidebar width */
+  padding: 20px; /* Add padding as needed */
 }

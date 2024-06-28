@@ -9,7 +9,7 @@ import { DayNightToggle } from "../../App"; // Import the DayNightToggle compone
 
 const Navbar = ({ theme, setTheme }) => {
   return (
-    <div className="navbar">
+    <div className="sidebar">
       <div className="logo-container">
         <DayNightToggle
           toggleTheme={() => setTheme(theme === "light" ? "dark" : "light")}
@@ -28,7 +28,7 @@ const Navbar = ({ theme, setTheme }) => {
         </li>
         <li>
           <Link to="/profile" className="icon-link">
-            <div className="icon-container projects-icon-container">
+            <div className="icon-container profile-icon-container">
               <div className="icon-wrapper">
                 <TbUser className="nav-icon" />
                 <span className="icon-text">Profile</span>

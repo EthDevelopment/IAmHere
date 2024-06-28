@@ -6,7 +6,7 @@ import Navbar from "./components/Nav/Navbar";
 import DayNightToggle from "./components/DayNight/daynighttoggle";
 import Feed from "./components/Feed/feed";
 import Profile from "./components/Profile/Profile"; // Import the Profile component
-
+import "./Global.css";
 import "./App.css";
 
 export const toggleTheme = (theme, setTheme) => {

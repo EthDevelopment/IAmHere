@@ -1,105 +1,90 @@
 /* Navbar.css */
 
-.navbar {
-  z-index: 1000; /* Ensure the navbar is on top */
-  position: fixed; /* Fix the navbar to the top */
+.sidebar {
+  position: fixed;
+  left: 0;
   top: 0;
-  width: 100%;
-  padding: 10px 0; /* Adjust padding as needed */
+  width: 20vw; /* 20% of viewport width */
+  height: 100vh; /* Full height */
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-right: 3px solid var(--border-color); /* Add border to the right */
 }
 
-.App.light .navbar {
+.App.light .sidebar {
   background-color: var(--light-background);
   color: var(--light-text-color);
 }
 
-.App.dark .navbar {
+.App.dark .sidebar {
   background-color: var(--dark-background);
   color: var(--dark-text-color);
 }
 
-.navbar ul {
+.logo-container {
+  padding-bottom: 20px; /* Add padding to differentiate logo from icons */
+}
+
+.sidebar ul {
   list-style-type: none;
-  display: flex;
-  justify-content: space-around;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
-.navbar li {
-  margin: 0;
+.sidebar li {
+  margin: 0; /* Reset margin */
+  border-bottom: 3px solid var(--border-color); /* Add border between items */
 }
 
-.navbar a,
-.navbar button,
-.navbar .daynight-toggle-wrapper {
+.sidebar li:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+.sidebar a,
+.sidebar button,
+.sidebar .daynight-toggle-wrapper {
   text-decoration: none; /* Remove underline for visited links */
   color: inherit; /* Inherit the text color from the parent element */
   background: none; /* Ensure button has no default styles */
   border: none; /* Ensure button has no border */
   cursor: pointer; /* Ensure the button has a pointer cursor */
-  padding: 0; /* Ensure no padding */
+  padding: 20px 30px; /* Add padding for better spacing */
+  display: flex;
+  align-items: center;
 }
 
-.navbar a:visited {
+.sidebar a:visited {
   text-decoration: none; /* Remove underline for visited links */
   color: inherit; /* Inherit the text color from the parent element */
 }
 
 .icon-container {
   display: flex;
-  flex-direction: column; /* Stack icon and text vertically */
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  align-items: center; /* Align items center vertically */
   cursor: pointer; /* Ensure the cursor indicates clickable */
 }
 
 .icon-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .nav-icon {
-  font-size: 2em; /* Ensure all icons are the same size */
+  font-size: 4em; /* Ensure all icons are the same size, doubled in size */
   color: var(--icon-color); /* Use the icon color from your CSS variables */
   transition: color 0.3s ease;
 }
 
+.icon-text {
+  margin-left: 20px; /* Add space between icon and text */
+  font-size: 1.5em; /* Adjust font size as needed */
+}
+
 .icon-container:hover .nav-icon {
   color: white; /* Change the icon color to white on hover */
-}
-
-.icon-text {
-  display: none; /* Hide the text */
-}
-
-/* Phone CSS */
-@media screen and (max-width: 799px) {
-  /* CSS for Nav text */
-  .App.light .navbar a,
-  .App.light .navbar .daynight-toggle-wrapper {
-    text-decoration: none;
-    color: var(--light-text-color);
-    font-size: 1em;
-    font-weight: bold;
-  }
-
-  .App.dark .navbar a,
-  .App.dark .navbar .daynight-toggle-wrapper {
-    text-decoration: none;
-    color: var(--dark-text-color);
-    font-size: 1em;
-    font-weight: bold;
-  }
-}
-
-@media (min-width: 800px) {
-  .navbar a,
-  .navbar button,
-  .navbar .daynight-toggle-wrapper {
-    font-size: 2em;
-    font-weight: bold;
-  }
 }
