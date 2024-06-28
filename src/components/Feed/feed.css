@@ -1,10 +1,8 @@
 /* feed.css */
 
 .feed-container {
-  width: calc(100% - 40px); /* Reduce width to leave margins */
-  max-width: calc(
-    100vw - 45vw - 40px
-  ); /* 100% width minus the sidebars and margins */
+  width: 55vw;
+  max-width: 55vw;
   margin: 0 auto;
   margin-top: 10vh; /* Adjust margin-top to account for the navbar height */
   border-radius: 8px;
@@ -53,7 +51,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-  align-items: center; /* Align items vertically center */
 }
 
 .post-author {
@@ -70,11 +67,8 @@
 }
 
 .post-timestamp {
-  display: flex;
-  flex-direction: column; /* Stack date and time vertically */
   color: var(--timestamp-color);
   font-size: 0.875em;
-  text-align: right;
 }
 
 .App.light .post-timestamp {
@@ -92,7 +86,7 @@
 }
 
 .App.light .post-content {
-  color: var (--light-post-content-color);
+  color: var(--light-post-content-color);
 }
 
 .App.dark .post-content {
@@ -101,7 +95,7 @@
 
 @media (max-width: 600px) {
   .feed-container {
-    max-width: calc(100vw - 55vw - 40px); /* Adjust for smaller screens */
+    max-width: 90vw;
     border-radius: 0;
   }
 }

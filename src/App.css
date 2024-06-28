@@ -1,12 +1,11 @@
-/* App.css */
+/* src/App.css */
 
 .App {
-  text-align: center;
-  overflow-x: hidden;
-  min-height: 100vh;
   display: flex;
-  flex-direction: row; /* Place items side by side */
-  align-items: flex-start; /* Align items at the start */
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .App.light {
@@ -19,10 +18,17 @@
   color: var(--dark-text-color);
 }
 
-.main-content {
-  flex-grow: 1; /* Allow the main content to grow and fill space */
-  margin-left: 25vw; /* Adjust margin-left to accommodate left sidebar width */
-  margin-right: 20vw; /* Adjust margin-right to accommodate right sidebar width */
-  padding: 20px; /* Add padding for better spacing */
-  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+.sidebar {
+  width: 25vw;
+}
+
+.feed-section {
+  width: 55vw;
+  display: flex;
+  justify-content: center;
+}
+
+.suggest-section {
+  width: 20vw;
+  padding: 20px;
 }

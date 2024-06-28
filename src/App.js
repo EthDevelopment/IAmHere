@@ -1,15 +1,14 @@
-// App.js
+// src/App.js
 
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./components/Nav/Navbar";
 import DayNightToggle from "./components/DayNight/daynighttoggle";
 import Feed from "./components/Feed/feed";
-import Profile from "./components/Profile/Profile"; // Import the Profile component
-import Suggest from "./components/Suggest/Suggest"; // Import the Suggest component
-
+import MetaMaskLogin from "./components/MetaMaskLogin/MetaMaskLogin";
+import Suggest from "./components/Suggest/Suggest";
 import "./App.css";
-import "./Global.css"; // Import global.css
+import "./Global.css";
 
 export const toggleTheme = (theme, setTheme) => {
   setTheme(theme === "light" ? "dark" : "light");
@@ -17,20 +16,47 @@ export const toggleTheme = (theme, setTheme) => {
 
 function App() {
   const [theme, setTheme] = useState("dark");
+  const [account, setAccount] = useState(null);
+
+  useEffect(() => {
+    const checkMetaMaskConnection = async () => {
+      if (window.ethereum) {
+        const accounts = await window.ethereum.request({
+          method: "eth_accounts",
+        });
+        if (accounts.length > 0) {
+          setAccount(accounts[0]);
+        }
+      }
+    };
+
+    checkMetaMaskConnection();
+  }, []);
+
+  if (!account) {
+    return <MetaMaskLogin setAccount={setAccount} />;
+  }
 
   return (
-    <Router>
-      <div className={`App ${theme}`}>
-        <Navbar theme={theme} setTheme={setTheme} />
-        <div className="main-content">
+    <div className={`App ${theme}`}>
+      <Navbar theme={theme} setTheme={setTheme} />
+      <div className="feed-section">
+        <div className="feed-container">
           <Routes>
-            <Route path="/" element={<Feed />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/home" element={<Feed />} />
+            <Route path="/explore" element={<div>Explore</div>} />
+            <Route path="/notifications" element={<div>Notifications</div>} />
+            <Route path="/messages" element={<div>Messages</div>} />
+            <Route path="/grok" element={<div>Grok</div>} />
+            <Route path="/profile" element={<div>Profile</div>} />
+            <Route path="*" element={<Navigate to="/home" />} />
           </Routes>
         </div>
+      </div>
+      <div className="suggest-section">
         <Suggest />
       </div>
-    </Router>
+    </div>
   );
 }
 

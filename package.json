@@ -26,7 +26,8 @@
     "scheduler": "^0.23.2",
     "slick-carousel": "^1.8.1",
     "string-convert": "^0.2.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "web3": "^4.10.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "latest"

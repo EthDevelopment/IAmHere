@@ -1,0 +1,26 @@
+/* src/components/MetaMaskLogin/MetaMaskLogin.css */
+
+.metamask-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+#metamask-fox {
+  width: 100px; /* Double the original size */
+  height: 100px; /* Double the original size */
+  pointer-events: none; /* Makes the cursor not interact with the SVG itself */
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+  position: absolute; /* Lock it in the middle of the screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the fox in the middle */
+}
