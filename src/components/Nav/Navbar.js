@@ -1,21 +1,12 @@
-import React, { useState } from "react";
+// Navbar.js
+
+import React from "react";
 import "./Navbar.css";
-import { BiHomeAlt2, BiPhone } from "react-icons/bi";
-import { TbRoad } from "react-icons/tb";
+import { BiHomeAlt2 } from "react-icons/bi";
+import { TbUser } from "react-icons/tb";
 import { DayNightToggle } from "../../App"; // Import the DayNightToggle component
-import ContactForm from "../Contact/ContactForm"; // Correctly import ContactForm
 
 const Navbar = ({ theme, setTheme }) => {
-  const [isContactFormOpen, setContactFormOpen] = useState(false);
-
-  const openContactForm = () => {
-    setContactFormOpen(true);
-  };
-
-  const closeContactForm = () => {
-    setContactFormOpen(false);
-  };
-
   return (
     <div className="navbar">
       <ul>
@@ -36,32 +27,19 @@ const Navbar = ({ theme, setTheme }) => {
               <div className="icon-wrapper">
                 <BiHomeAlt2 className="nav-icon" />
               </div>
-              <span className="icon-text">Home</span>
             </div>
           </a>
         </li>
         <li>
-          <a href="#Projects" className="icon-link">
+          <a href="#Profile" className="icon-link">
             <div className="icon-container projects-icon-container">
               <div className="icon-wrapper">
-                <TbRoad className="nav-icon" />
+                <TbUser className="nav-icon" />
               </div>
-              <span className="icon-text">Projects</span>
             </div>
           </a>
         </li>
-        <li>
-          <button onClick={openContactForm} className="icon-link">
-            <div className="icon-container contact-icon-container">
-              <div className="icon-wrapper">
-                <BiPhone className="nav-icon" />
-              </div>
-              <span className="icon-text">Contact </span>
-            </div>
-          </button>
-        </li>
       </ul>
-      <ContactForm isOpen={isContactFormOpen} onClose={closeContactForm} />
     </div>
   );
 };

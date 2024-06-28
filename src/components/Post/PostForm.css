@@ -1,0 +1,133 @@
+/* postForm.css */
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App.light .post-form {
+  border-bottom: 1px solid var(--light-border-color);
+  background-color: var(--light-background);
+  color: var(--light-text-color);
+}
+
+.App.dark .post-form {
+  border-bottom: 1px solid var(--dark-border-color);
+  background-color: var(--dark-background);
+  color: var(--dark-text-color);
+}
+
+.post-form-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--profile-pic-background);
+}
+
+.App.light .profile-pic {
+  background-color: var(--light-profile-pic-background);
+}
+
+.App.dark .profile-pic {
+  background-color: var(--dark-profile-pic-background);
+}
+
+.post-input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  resize: none;
+  background-color: var(--input-background);
+  color: var(--input-text-color);
+}
+
+.post-input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.App.light .post-input {
+  background-color: var(--light-input-background);
+  color: var(--light-input-text-color);
+}
+
+.App.dark .post-input {
+  background-color: var(--dark-input-background);
+  color: var(--dark-input-text-color);
+}
+
+.App.light .post-input::placeholder {
+  color: var(--light-placeholder-color);
+}
+
+.App.dark .post-input::placeholder {
+  color: var(--dark-placeholder-color);
+}
+
+.post-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 1.5em;
+  color: var(--icon-color);
+  cursor: pointer;
+}
+
+.App.light .icon {
+  color: var(--light-icon-color);
+}
+
+.App.dark .icon {
+  color: var(--dark-icon-color);
+}
+
+.post-button {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.post-button:hover {
+  background-color: var(--button-hover-background);
+}
+
+.App.light .post-button {
+  background-color: var(--light-button-background);
+  color: var(--light-button-text-color);
+}
+
+.App.dark .post-button {
+  background-color: var(--dark-button-background);
+  color: var(--dark-button-text-color);
+}
+
+.App.light .post-button:hover {
+  background-color: var(--light-button-hover-background);
+}
+
+.App.dark .post-button:hover {
+  background-color: var(--dark-button-hover-background);
+}

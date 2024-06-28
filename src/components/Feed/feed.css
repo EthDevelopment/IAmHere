@@ -1,0 +1,101 @@
+/* feed.css */
+
+.feed-container {
+  width: 80vw;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-top: 10vh; /* Adjust margin-top to account for the navbar height */
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 70vh; /* Adjust the height to fit below the navbar */
+  padding: 20px; /* Add padding around the feed */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App.light .feed-container {
+  border: 1px solid var(--light-border-color);
+  background-color: var(--light-background);
+  color: var(--light-text-color);
+}
+
+.App.dark .feed-container {
+  border: 1px solid var(--dark-border-color);
+  background-color: var(--dark-background);
+  color: var(--dark-text-color);
+}
+
+.post {
+  padding: 15px;
+  background-color: var(--post-background-color);
+  color: var(--post-text-color);
+}
+
+.App.light .post {
+  border-bottom: 1px solid var(--light-border-color);
+  background-color: var(--light-background);
+  color: var(--light-text-color);
+}
+
+.App.dark .post {
+  border-bottom: 1px solid var(--dark-border-color);
+  background-color: var(--dark-background);
+  color: var(--dark-text-color);
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-author {
+  font-weight: bold;
+  color: var(--author-color);
+}
+
+.App.light .post-author {
+  color: var(--light-author-color);
+}
+
+.App.dark .post-author {
+  color: var(--dark-author-color);
+}
+
+.post-timestamp {
+  color: var(--timestamp-color);
+  font-size: 0.875em;
+}
+
+.App.light .post-timestamp {
+  color: var(--light-timestamp-color);
+}
+
+.App.dark .post-timestamp {
+  color: var(--dark-timestamp-color);
+}
+
+.post-content {
+  font-size: 1em;
+  line-height: 1.5;
+  color: var(--post-content-color);
+}
+
+.App.light .post-content {
+  color: var(--light-post-content-color);
+}
+
+.App.dark .post-content {
+  color: var(--dark-post-content-color);
+}
+
+@media (max-width: 600px) {
+  .feed-container {
+    max-width: 90vw;
+    border-radius: 0;
+  }
+}

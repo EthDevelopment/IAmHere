@@ -1,0 +1,62 @@
+/* feed.css */
+
+.feed-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 80vh; /* Adjust the height as needed */
+}
+
+.App.light .feed-container {
+  border: 1px solid var(--light-border-color);
+}
+
+.App.dark .feed-container {
+  border: 1px solid var(--dark-border-color);
+}
+
+.post {
+  padding: 15px;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-author {
+  font-weight: bold;
+}
+
+.post-timestamp {
+  color: #657786;
+  font-size: 0.875em;
+}
+
+.post-content {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.App.light .post {
+  border-bottom: 1px solid var(--light-border-color);
+}
+
+.App.dark .post {
+  border-bottom: 1px solid var(--dark-border-color);
+}
+
+@media (max-width: 600px) {
+  .feed-container {
+    max-width: 100%;
+    border-radius: 0;
+  }
+}

@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/Nav/Navbar";
 import DayNightToggle from "./components/DayNight/daynighttoggle";
-import Hero from "./components/Hero/hero";
-import ProjectDisplay from "./components/Projects/ProjectDisplay";
+import Feed from "./components/Feed/feed";
 
 import "./App.css";
 
@@ -18,12 +17,7 @@ function App() {
   return (
     <div className={`App ${theme}`}>
       <Navbar theme={theme} setTheme={setTheme} />
-
-      <section id="Home">
-        <Hero />
-      </section>
-      <section id="Projects"></section>
-      <ProjectDisplay />
+      <Feed />
     </div>
   );
 }

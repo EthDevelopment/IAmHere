@@ -1,30 +1,28 @@
 /* Navbar.css */
-/* CSS For Nav bar */
+
 .navbar {
-  z-index: 1000; /* You can adjust the value as needed */
+  z-index: 1000; /* Ensure the navbar is on top */
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  width: 100%;
+  padding: 10px 0; /* Adjust padding as needed */
 }
 
 .App.light .navbar {
   background-color: var(--light-background);
   color: var(--light-text-color);
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .App.dark .navbar {
   background-color: var(--dark-background);
   color: var(--dark-text-color);
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .navbar ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  padding: 2.5vh;
+  padding: 0;
   margin: 0;
 }
 
@@ -63,29 +61,18 @@
   justify-content: center;
 }
 
-.icon-text {
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  font-weight: bold;
-  margin-top: 5px; /* Add some spacing between icon and text */
-}
-
 .nav-icon {
   font-size: 2em; /* Ensure all icons are the same size */
   color: var(--icon-color); /* Use the icon color from your CSS variables */
-  opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.icon-link:hover .nav-icon,
 .icon-container:hover .nav-icon {
-  opacity: 0; /* Hide the icon on hover */
+  color: white; /* Change the icon color to white on hover */
 }
 
-.icon-link:hover .icon-text,
-.icon-container:hover .icon-text {
-  opacity: 1;
-  transform: translateY(10px); /* Move text down below the icon */
+.icon-text {
+  display: none; /* Hide the text */
 }
 
 /* Phone CSS */
