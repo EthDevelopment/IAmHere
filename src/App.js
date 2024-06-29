@@ -39,21 +39,20 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <Navbar theme={theme} setTheme={setTheme} />
-      <div className="feed-section">
-        <div className="feed-container">
-          <Routes>
-            <Route path="/home" element={<Feed />} />
-            <Route path="/explore" element={<div>Explore</div>} />
-            <Route path="/notifications" element={<div>Notifications</div>} />
-            <Route path="/messages" element={<div>Messages</div>} />
-            <Route path="/grok" element={<div>Grok</div>} />
-            <Route path="/profile" element={<div>Profile</div>} />
-            <Route path="*" element={<Navigate to="/home" />} />
-          </Routes>
-        </div>
+      <div className="navbar-container">
+        <Navbar theme={theme} setTheme={setTheme} />
       </div>
-      <div className="suggest-section">
+      <div className="main-content">
+        <Routes>
+          <Route path="/home" element={<Feed />} />
+          <Route path="/explore" element={<div>Explore</div>} />
+          <Route path="/notifications" element={<div>Notifications</div>} />
+          <Route path="/messages" element={<div>Messages</div>} />
+          <Route path="/profile" element={<div>Profile</div>} />
+          <Route path="*" element={<Navigate to="/home" />} />
+        </Routes>
+      </div>
+      <div className="suggest-container">
         <Suggest />
       </div>
     </div>

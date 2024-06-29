@@ -1,4 +1,4 @@
-/* src/App.css */
+/* App.css */
 
 .App {
   display: flex;
@@ -7,38 +7,18 @@
   color: var(--text-color);
 }
 
-.App.light {
-  background-color: var(--light-background);
-  color: var(--light-text-color);
+.navbar-container {
+  width: 25vw; /* 25% of viewport width */
 }
 
-.App.dark {
-  background-color: var(--dark-background);
-  color: var(--dark-text-color);
-}
-
-.sidebar {
-  width: 25vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.feed-section {
-  width: 55vw;
-  margin-left: 25vw; /* Account for sidebar width */
+.main-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  flex-direction: column;
+  flex-grow: 1; /* Allow main content to grow and fill the remaining space */
+  padding: 10px;
+  margin: 0 auto;
 }
 
-.suggest-section {
-  width: 20vw;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  padding: 20px;
+.suggest-container {
+  width: 20vw; /* 20% of viewport width */
 }

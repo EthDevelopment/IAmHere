@@ -2,14 +2,12 @@
 
 .feed-container {
   width: 100%;
-  max-width: 100%;
+  margin: 0 auto;
   margin-top: 10vh; /* Adjust margin-top to account for the navbar height */
-  padding: 20px; /* Add padding around the feed */
+  padding: 0 20px; /* Add equal padding around the feed */
   background-color: var(--background-color);
   color: var(--text-color);
-  overflow-y: auto;
-  max-height: 70vh; /* Adjust the height to fit below the navbar */
-  box-sizing: border-box; /* Ensure padding is included in the width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .App.light .feed-container {
@@ -22,24 +20,33 @@
   color: var(--dark-text-color);
 }
 
+.post-form {
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color); /* Divider between post form and posts */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--post-background-color);
+}
+
 .post {
   padding: 15px;
+  margin: 10px 0; /* Add margin between posts */
   background-color: var(--post-background-color);
-  color: var (--post-text-color);
-  word-wrap: break-word; /* Ensure long words break to the next line */
-  overflow-wrap: break-word; /* Ensure long words break to the next line */
+  color: var(--post-text-color);
+  border-radius: 8px; /* Add rounded corners to posts */
 }
 
 .App.light .post {
-  border-bottom: 1px solid var(--light-border-color);
   background-color: var(--light-background);
   color: var(--light-text-color);
+  border: 1px solid var(--light-border-color);
 }
 
 .App.dark .post {
-  border-bottom: 1px solid var(--dark-border-color);
   background-color: var(--dark-background);
   color: var(--dark-text-color);
+  border: 1px solid var(--dark-border-color);
 }
 
 .post:last-child {
@@ -89,7 +96,7 @@
 }
 
 .App.light .post-content {
-  color: var (--light-post-content-color);
+  color: var(--light-post-content-color);
 }
 
 .App.dark .post-content {
@@ -98,7 +105,8 @@
 
 @media (max-width: 600px) {
   .feed-container {
-    max-width: 100%; /* Adjust for smaller screens */
+    width: 100%;
+    padding: 0 10px; /* Adjust padding for smaller screens */
     border-radius: 0;
   }
 }
