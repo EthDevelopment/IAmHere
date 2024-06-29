@@ -2,7 +2,6 @@
 
 .App {
   display: flex;
-  flex-direction: row;
   min-height: 100vh;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -20,15 +19,26 @@
 
 .sidebar {
   width: 25vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .feed-section {
   width: 55vw;
+  margin-left: 25vw; /* Account for sidebar width */
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .suggest-section {
   width: 20vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
   padding: 20px;
 }

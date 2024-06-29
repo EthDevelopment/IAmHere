@@ -1,26 +1,23 @@
 /* feed.css */
 
 .feed-container {
-  width: 55vw;
-  max-width: 55vw;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
   margin-top: 10vh; /* Adjust margin-top to account for the navbar height */
-  border-radius: 8px;
-  overflow-y: auto;
-  max-height: 70vh; /* Adjust the height to fit below the navbar */
   padding: 20px; /* Add padding around the feed */
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow-y: auto;
+  max-height: 70vh; /* Adjust the height to fit below the navbar */
+  box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .App.light .feed-container {
-  border: 1px solid var(--light-border-color);
   background-color: var(--light-background);
   color: var(--light-text-color);
 }
 
 .App.dark .feed-container {
-  border: 1px solid var(--dark-border-color);
   background-color: var(--dark-background);
   color: var(--dark-text-color);
 }
@@ -28,7 +25,9 @@
 .post {
   padding: 15px;
   background-color: var(--post-background-color);
-  color: var(--post-text-color);
+  color: var (--post-text-color);
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  overflow-wrap: break-word; /* Ensure long words break to the next line */
 }
 
 .App.light .post {
@@ -51,6 +50,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  align-items: center; /* Align items vertically center */
 }
 
 .post-author {
@@ -67,8 +67,11 @@
 }
 
 .post-timestamp {
+  display: flex;
+  flex-direction: column; /* Stack date and time vertically */
   color: var(--timestamp-color);
   font-size: 0.875em;
+  text-align: right;
 }
 
 .App.light .post-timestamp {
@@ -86,7 +89,7 @@
 }
 
 .App.light .post-content {
-  color: var(--light-post-content-color);
+  color: var (--light-post-content-color);
 }
 
 .App.dark .post-content {
@@ -95,7 +98,7 @@
 
 @media (max-width: 600px) {
   .feed-container {
-    max-width: 90vw;
+    max-width: 100%; /* Adjust for smaller screens */
     border-radius: 0;
   }
 }
